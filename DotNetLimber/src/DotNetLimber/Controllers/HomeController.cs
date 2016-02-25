@@ -13,21 +13,28 @@ namespace DotNetLimber.Controllers
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult Platforms()
         {
             ViewData["Message"] = "Your application description page.";
 
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult Press()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Your press page.";
 
             return View();
         }
 
-        public IActionResult Error()
+		public IActionResult Gear()
+		{
+			ViewData["Message"] = "Your Gear page.";
+
+			return View();
+		}
+
+		public IActionResult Error()
         {
             return View();
         }
