@@ -1,4 +1,8 @@
-﻿body {
+﻿@font-face {
+	font-family: 'Cinzel', Helvetica, serif;
+}
+
+body {
     background-color: #2a9dea;
     padding-top: 50px;
     padding-bottom: 20px;
