@@ -1,4 +1,4 @@
-﻿@font-face {
+﻿\@font-face {
 	font-family: 'Cinzel', Helvetica, serif;
 }
 
@@ -20,6 +20,19 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+form {
+    text-align:center;
+}
+
+.social {
+    max-height: 40px;
+    margin: 5px;
+}
+
+footer {
+    text-align:center;
 }
 
 .header h1 {
