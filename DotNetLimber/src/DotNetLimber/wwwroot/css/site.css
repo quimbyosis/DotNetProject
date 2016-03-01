@@ -47,9 +47,28 @@ footer {
     padding-top: 20px;
 }
 
+.container-fluid p {
+    text-align:center;
+}
+
+.vote {
+    text-align:center;
+}
+
+.vote p {
+    padding: 5% 10% 5% 10%;
+    text-align:center;
+}
+
 .we-cat {
     background: linear-gradient(0deg, transparent, #fff), #2a9dea url('../images/limber_header.jpg') no-repeat center center;
     background-size: cover;
     padding: 0;
+    height: 90vh;
+}
+
+.puffy {
+    background: url('../images/rockypuffy.jpg') no-repeat center center;
+    background-size: cover;
     height: 90vh;
 }
