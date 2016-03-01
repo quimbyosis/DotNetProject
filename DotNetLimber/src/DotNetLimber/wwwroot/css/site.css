@@ -60,6 +60,11 @@ footer {
     text-align:center;
 }
 
+.gallery img {
+    width: 60%;
+	margin: 5% auto;
+}
+
 .we-cat {
     background: linear-gradient(0deg, transparent, #fff), #2a9dea url('../images/limber_header.jpg') no-repeat center center;
     background-size: cover;
@@ -75,6 +80,12 @@ footer {
 
 .rush {
     background: url('../images/new_rushmore.jpg') no-repeat center center;
+    background-size: cover;
+    height: 90vh;
+}
+
+.obama {
+    background: linear-gradient(0deg, transparent, #fff), #2a9dea url('../images/meowwecan.jpg') no-repeat center center;
     background-size: cover;
     height: 90vh;
 }

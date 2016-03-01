@@ -29,7 +29,7 @@ namespace DotNetLimber.Controllers
 
 		public IActionResult Gear()
 		{
-			ViewData["Message"] = "Limberbutt Campaign Gear!";
+			ViewData["Message"] = "Click on pictures to purchase to reveal full size images.";
 
 			return View();
 		}
