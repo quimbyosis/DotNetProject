@@ -72,3 +72,9 @@ footer {
     background-size: cover;
     height: 90vh;
 }
+
+.rush {
+    background: url('../images/new_rushmore.jpg') no-repeat center center;
+    background-size: cover;
+    height: 90vh;
+}

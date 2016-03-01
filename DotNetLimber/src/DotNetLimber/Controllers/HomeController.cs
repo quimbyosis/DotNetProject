@@ -22,7 +22,7 @@ namespace DotNetLimber.Controllers
 
         public IActionResult Press()
         {
-            ViewData["Message"] = "Your press page.";
+            ViewData["Message"] = "Limberbutt McCubbins is a candidate we can all get behind! Meow is the time!";
 
             return View();
         }
