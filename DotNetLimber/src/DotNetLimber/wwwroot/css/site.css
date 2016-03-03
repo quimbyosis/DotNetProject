@@ -24,7 +24,12 @@ textarea {
 
 
 form {
+    padding-top: 5%;
     text-align:center;
+}
+
+iframe {
+    padding: 10%;
 }
 
 .social {
@@ -40,6 +45,7 @@ footer {
     color: #000;
 	font-family: 'Cinzel', Helvetica, serif;
 	font-weight: bold; 
+    font-size: 6rem;
 	text-shadow: -2px -2px 1px rgba(100, 222, 252, .8);
 	text-align: center;
 	position: relative;
