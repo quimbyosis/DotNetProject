@@ -22,10 +22,27 @@ textarea {
     max-width: 280px;
 }
 
+#about {
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#about h3 {
+    text-align:center;
+}
 
 form {
     padding-top: 5%;
     text-align:center;
+}
+
+input {
+    height: 40px;
+}
+
+button { 
+    height: 40px;
 }
 
 iframe {
