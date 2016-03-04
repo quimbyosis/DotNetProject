@@ -1,16 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using DotNetLimber.Models;
 using Microsoft.AspNet.Mvc;
 
 namespace DotNetLimber.Controllers
 {
-    public class HomeController : Controller
+	public class HomeController : Controller
     {
+
         public IActionResult Index()
         {
-            return View();
+			ViewData["Message"] = "Find other Limberbutt supporters in your area.";
+
+			var p = new Person()
+			{
+				FirstName = "Isaac",
+				LastName = "Weiss",
+				ZipCode = 40208
+			};
+
+            return View(p);
         }
 
         public IActionResult Platforms()

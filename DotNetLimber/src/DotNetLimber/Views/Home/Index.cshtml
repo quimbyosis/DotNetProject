@@ -1,4 +1,6 @@
-﻿@{
+﻿@model Person
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -10,17 +12,23 @@
 <div class="row">
 
     <form>
-        <div class="col-sm-2 col-sm-offset-2">
+        <div class="col-sm-1 col-sm-offset-1">
+            <input placeholder="First Name"/>
+        </div>
+        <div class="col-sm-1 col-sm-offset-1">
+            <input placeholder="Last Name" />
+        </div>
+        <div class="col-sm-1 col-sm-offset-1">
+            <input placeholder="Zip Code" />
+        </div>
+        <div class="col-sm-1 col-sm-offset-1">
             <input placeholder="Email"/>
         </div>
-        <div class="col-sm-2 col-sm-offset-0">
-            <input placeholder="Zip Code"/>
-        </div>
-        <div class="col-sm-1 col-sm-offset-0">
+        <div class="col-sm-1 col-sm-offset-1">
             <button class="btn btn-default" type="submit">Meow</button>
         </div>
     </form>
-    <div class="col-sm-2">
+    <div class="col-sm-1 col-sm-offset-0">
         <h4>Join us.</h4>
     </div>
 </div>
