@@ -8,16 +8,11 @@ namespace DotNetLimber.Controllers
 
         public IActionResult Index()
         {
-			ViewData["Message"] = "Find other Limberbutt supporters in your area.";
+			ViewData["Message"] = "Meow is the time!";
 
-			var p = new Person()
-			{
-				FirstName = "Isaac",
-				LastName = "Weiss",
-				ZipCode = 40208
-			};
+			
 
-            return View(p);
+            return View();
         }
 
         public IActionResult Platforms()
@@ -39,6 +34,21 @@ namespace DotNetLimber.Controllers
 			ViewData["Message"] = "Click on pictures to purchase to reveal full size images.";
 
 			return View();
+		}
+
+		public IActionResult Volunteer()
+		{
+			ViewData["Message"] = "Find other Limberbutt supporters in your area.";
+
+			var p = new Person()
+			{
+				Email = "isaacw@manual.com",
+				FirstName = "Isaac",
+				LastName = "Weiss",
+				ZipCode = 40208
+			};
+
+			return View(p);
 		}
 
 		public IActionResult Error()
