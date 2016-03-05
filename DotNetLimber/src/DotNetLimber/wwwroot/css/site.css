@@ -114,3 +114,9 @@ footer {
     background-size: cover;
     height: 90vh;
 }
+
+.stare {
+    background: linear-gradient(0deg, transparent, #fff), #2a9dea url('../images/limberstare.jpg') no-repeat center center;
+    background-size: cover;
+    height: 90vh;
+}
