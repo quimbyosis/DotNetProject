@@ -11,7 +11,7 @@ namespace DotNetLimber.Models
 		[Key]
 		public string Email { get; set; }
 		public string FirstName { get; set; }
-			public string LastName { get; set; }
-			public int ZipCode { get; set; }
+		public string LastName { get; set; }
+		public int ZipCode { get; set; }
 	}
 }

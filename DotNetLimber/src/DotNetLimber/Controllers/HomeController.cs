@@ -36,6 +36,15 @@ namespace DotNetLimber.Controllers
 			return View();
 		}
 
+		// POST /HOME/VOLUNTEER
+		[HttpPost]
+		public IActionResult Volunteer(Person personIn)
+		{
+			return View(personIn);
+		}
+
+		// GET /HOME/VOLUNTEER
+		[HttpGet]
 		public IActionResult Volunteer()
 		{
 			ViewData["Message"] = "Find other Limberbutt supporters in your area.";
