@@ -10,7 +10,7 @@ using DotNetLimber.Models;
 
 namespace DotNetLimber.Migrations
 {
-    [DbContext(typeof(ApplicationDbContext))]
+    [DbContext(typeof(PersonContext))]
     [Migration("00000000000000_CreateIdentitySchema")]
     partial class CreateIdentitySchema
     {

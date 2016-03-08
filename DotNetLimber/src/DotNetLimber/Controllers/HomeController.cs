@@ -40,6 +40,10 @@ namespace DotNetLimber.Controllers
 		[HttpPost]
 		public IActionResult Volunteer(Person personIn)
 		{
+			var db = new PersonContext();
+			db.Persons.Add(personIn);
+			db.SaveChanges();
+
 			return View(personIn);
 		}
 
