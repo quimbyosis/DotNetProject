@@ -31,7 +31,7 @@ namespace DotNetLimber.Controllers
 
 		public IActionResult Gear()
 		{
-			ViewData["Message"] = "Click on pictures to purchase to reveal full size images.";
+			ViewData["Message"] = "Click on pictures to reveal full size images.";
 
 			return View();
 		}
@@ -51,7 +51,13 @@ namespace DotNetLimber.Controllers
 		[HttpGet]
 		public IActionResult Volunteer()
 		{
-			ViewData["Message"] = "Find other Limberbutt supporters in your area.";
+			//Need to add conditional statement here if valid, show this message
+			if (ModelState.IsValid)
+			{
+				ViewData["Message"] = "We have received your volunteer information. Thank you!";
+			}
+			
+			
 
 			var p = new Person()
 			{

@@ -18,9 +18,7 @@
         I hear people complaining that they can't find a candidate that they can agree with on issues. The truth is, you'd be hard pressed to find a 100% match. I'd encourage you to take this quiz, while they don't list me as a candidate, it will give you an idea of all the issues at stake in the 2016 election. This is why I'm not for single issue voting. <a href="http://bit.ly/1PGqiQz">ISideWith.com</a>
     </p>
 </div>
-<div>
 
-</div>
 <form asp-action="Volunteer">
     <div class="form-horizontal">
         <h2>Join us now!</h2>
@@ -60,6 +58,10 @@
         </div>
     </div>
 </form>
+<div>
+    @*This is where the thank you for submitting message will go.*@
+    <p>@ViewData["Message"]</p>
+</div>
 
 <div>
     <a asp-action="Index">Back to List</a>
