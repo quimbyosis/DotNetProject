@@ -1,5 +1,7 @@
 ﻿using DotNetLimber.Models;
+using Microsoft.AspNet.Http;
 using Microsoft.AspNet.Mvc;
+using System;
 
 namespace DotNetLimber.Controllers
 {
@@ -49,15 +51,17 @@ namespace DotNetLimber.Controllers
 
 		// GET /HOME/VOLUNTEER
 		[HttpGet]
-		public IActionResult Volunteer()
+		public IActionResult Volunteer(string submit)
 		{
-			//Need to add conditional statement here if valid, show this message
-			if (ModelState.IsValid)
+			//Need to add conditional statement here, this doesn't work yet. womp womp.
+			if (!string.IsNullOrEmpty(submit))
 			{
-				ViewData["Message"] = "We have received your volunteer information. Thank you!";
+				ViewData["Message"] = "Please fill out all fields.";
 			}
-			
-			
+			else
+			{
+				ViewData["Mesage"] = "Thank you for submitting your information! We will be in contact soon.";
+			}
 
 			var p = new Person()
 			{
@@ -69,6 +73,7 @@ namespace DotNetLimber.Controllers
 
 			return View(p);
 		}
+
 
 		public IActionResult Error()
         {
