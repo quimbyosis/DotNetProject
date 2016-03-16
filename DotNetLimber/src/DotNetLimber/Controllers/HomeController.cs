@@ -46,23 +46,13 @@ namespace DotNetLimber.Controllers
 			db.Persons.Add(personIn);
 			db.SaveChanges();
 
-			return View(personIn);
+			return View("_Confirm");
 		}
 
 		// GET /HOME/VOLUNTEER
 		[HttpGet]
-		public IActionResult Volunteer(string submit)
+		public IActionResult Volunteer()
 		{
-			//Need to add conditional statement here, this doesn't work yet. womp womp.
-			if (!string.IsNullOrEmpty(submit))
-			{
-				ViewData["Message"] = "Please fill out all fields.";
-			}
-			else
-			{
-				ViewData["Mesage"] = "Thank you for submitting your information! We will be in contact soon.";
-			}
-
 			var p = new Person()
 			{
 				Email = "isaacw@manual.com",
@@ -71,7 +61,7 @@ namespace DotNetLimber.Controllers
 				ZipCode = 40208
 			};
 
-			return View(p);
+			return View();
 		}
 
 
