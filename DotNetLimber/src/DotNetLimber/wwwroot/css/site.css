@@ -28,9 +28,6 @@ textarea {
     padding-right: 20%;
 }
 
-#about h3 {
-    text-align:center;
-}
 
 form {
     padding-top: 5%;
@@ -59,6 +56,15 @@ footer {
     text-align:center;
 }
 
+ul {
+    list-style: none;
+    text-align:center;
+}
+
+a {
+	color: #ccc;
+	padding: 30px 0;
+}
 
 .h1 {
     color: #000;
@@ -70,6 +76,12 @@ footer {
 	position: relative;
 	margin-top: 0;
     padding-top: 20px;
+}
+
+.h2, 
+.h3,
+.h4 {
+    text-align: center;
 }
 
 .container-fluid p {

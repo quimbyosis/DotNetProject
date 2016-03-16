@@ -10,23 +10,17 @@ namespace DotNetLimber.Controllers
 
         public IActionResult Index()
         {
-			ViewData["Message"] = "Meow is the time!";
-
-			
 
             return View();
         }
 
         public IActionResult Platforms()
         {
-            ViewData["Message"] = "Your application description page.";
-
             return View();
         }
 
         public IActionResult Press()
         {
-            ViewData["Message"] = "Limberbutt McCubbins is a candidate we can all get behind! Meow is the time!";
 
             return View();
         }
