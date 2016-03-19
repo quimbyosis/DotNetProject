@@ -66,6 +66,13 @@ a {
 	padding: 30px 0;
 }
 
+hr {
+	border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(204, 204, 204, 0), rgba(204, 204, 204, 0.8), rgba(204, 204, 204, 0));
+    clear: both;
+}
+
 .h1 {
     color: #000;
 	font-family: 'Cinzel', Helvetica, serif;
@@ -110,6 +117,14 @@ a {
 	color: white;
 }
 
+.platforms {
+    padding-top: 5%;
+}
+
+.platforms img {
+    padding-top: 5%;
+}
+
 .container-fluid p {
     text-align:center;
 }
@@ -121,6 +136,11 @@ a {
 .vote p {
     padding: 5% 10% 5% 10%;
     text-align:center;
+}
+
+.plTitle {
+    font-weight:bold;
+    padding-top: 5%;
 }
 
 .gallery img {
@@ -157,4 +177,42 @@ a {
     background: linear-gradient(0deg, transparent, #fff), #2a9dea url('../images/limberstare.jpg') no-repeat center center;
     background-size: cover;
     height: 90vh;
+}
+
+@media screen and (max-width: 400px) {
+    .h1 {
+        font-size: 4rem;
+    }
+
+    .social {
+        max-width: 20px;
+        max-height: 20px;
+        margin: 5px;
+    }
+
+    .links {
+        padding-bottom: 10%;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    #together {
+        font-size: 4rem;
+    }
+
+    .social {
+        max-width: 30px;
+        max-height: 30px;
+        margin: 5px;
+    }
+
+    .links {
+        padding-bottom: 3%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 975px) {
+    .links {
+        padding-bottom: 1%;
+    }
 }
